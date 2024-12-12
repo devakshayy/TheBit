@@ -52,13 +52,21 @@ const subjects = [
     description: "Previous years Malayalam question papers and solved answers.",
     color: '#A5B599'
   },
+  {
+    id: 6,
+    language: "Malayalam",
+    subject: "Hindi",
+    description: "Previous years Hindi question papers and solved answers.",
+    color: '#9ABDB9'
+  },
 ];
 
 const HomePage = () => {
   return (
     <>
       <Header/>
-      <div className=' grid gap-4 lg:gap-10  grid-cols-2 md:grid-cols-4 lg:grid-cols-5 py-4 px-2 md:px-[100px] lg:px-20'>
+      <div className="container mx-auto px-4 py-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 justify-items-center">
          {subjects.map(subject => (
             <Card
                 key={subject.id}
@@ -69,8 +77,13 @@ const HomePage = () => {
             />
          ))}
       </div>
+      </div>
+      
     </>
   )
 }
 
 export default HomePage
+
+
+{/* <div className=' grid items-center gap-4 lg:gap-10  grid-cols-2 md:grid-cols-3 lg:grid-cols-4 py-4 sm:py-2 md:px-[100px] lg:px-20'> */}
