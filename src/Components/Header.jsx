@@ -1,8 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
     <div className='flex justify-between px-4 items-center h-[80px] min-w-full border-[#8F8D8D] border-b-2'>
+      <Link to="/" >
       <div className='w-[80px] h-[70px] md:w-[100px]  md:h-[80px]'>
         <img 
           className='h-full w-full'
@@ -10,6 +12,7 @@ const Header = () => {
           alt="TheBitLogo" 
         />
       </div>
+      </Link>
       <div className='relative'>
         <input 
           placeholder='Search...'
