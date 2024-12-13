@@ -1,7 +1,7 @@
-import React from "react";
 import { Link } from "react-router-dom";
 
 const Card = ({language,description,subject,color}) => {
+ 
   return (
     <div style={{backgroundColor:`${color}`}} className=" flex flex-col justify-between w-[320px]  sm:w-[220px]  h-[240px] rounded-xl px-2 py-3">
     {/* first div */}
@@ -16,16 +16,16 @@ const Card = ({language,description,subject,color}) => {
     {/* second div */}
     <div className="border-b-2 pb-2 text-white">
       <h1 className="text-xl font-bold">{subject}</h1>
-      <p className="text-[12px]">{description}</p>
+      <p className="text-[13px]">{description}</p>
     </div>
     {/* third div */}
     <div className="h-[35px] flex  justify-between place-items-center">
-       <Link to={`/questions/${subject}`} >
+       <Link to={`/questionshub/${subject}`} >
         <button  className="bg-white w-[90px] rounded-xl h-full flex items-center text-[15px] justify-center p-2">
           Questions
         </button>
        </Link>
-       <Link to={`/questions/${subject}`} >
+       <Link to={`/answershub/${subject}`} >
         <button className="bg-white w-[90px] rounded-xl h-full flex items-center text-[15px] justify-center p-2">
           Answers
         </button>

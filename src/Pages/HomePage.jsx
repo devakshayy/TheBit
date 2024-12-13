@@ -1,16 +1,6 @@
 import React from 'react'
 import Card from '../Components/Card'
 import { subjects } from '../data/subjects'
-// import { socialQns } from '../data/socialQns'
-
-// const DownloadPapers = () => {
-//   const handleDownload = (fileName) => {
-//     const fileUrl = `${import.meta.env.BASE_URL}${fileName}`;
-//     const link = document.createElement("a");
-//     link.href = fileUrl;
-//     link.download = fileName.split("/").pop(); // Extract the actual file name
-//     link.click();
-//   };
 
 const HomePage = () => {
   return (

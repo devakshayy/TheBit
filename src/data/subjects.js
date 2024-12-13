@@ -58,8 +58,8 @@ export const subjects = [
     {
         id: 8,
         language: "Malayalam",
-        subject: "Shameem",
-        description: "Previous years Social Science question papers and solved answers.",
+        subject: "Sanskrit",
+        description: "Previous years Sanskrit question papers and solved answers.",
         color: '#887BAF'  
       },
   ];

@@ -3,16 +3,17 @@ import QuestionBtn from '../Components/QuestionBtn'
 import { useParams } from 'react-router-dom'
 import { questions } from '../data/questions'
 
-
 const QuestionListPage = () => {
   const {sub} = useParams()
   console.log(sub)
-  const subjectName = questions[sub]
-  const handleDownload = (fileName) => {
+  const questionsList = questions[sub];
+  
+  const handleDownloadQus = (fileName) => {
     const fileUrl = `${import.meta.env.BASE_URL}${fileName}`;
     const link = document.createElement("a");
     link.href = fileUrl;
-    link.download = fileName.split("/").pop(); // Extract the actual file name
+    link.target = '_blank'
+   //  link.download = fileName.split("/").pop(); // Extract the actual file name
     link.click();
   };
   
@@ -22,10 +23,10 @@ const QuestionListPage = () => {
                   <p> {sub} Question Pappers</p>        
             </div>
             <div className='grid gap-4 sm:gap-14 lg:gap-18 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 p-2'>
-               {subjectName.map((x,index)=> (
+               {questionsList.map((x,index)=> (
                   <QuestionBtn
                        key={index}
-                       onClick={() => handleDownload(x.fileName)}
+                       onClick={() => handleDownloadQus(x.fileName)}
                   >
                      { `${sub} ${x.year}` }
                   </QuestionBtn>
