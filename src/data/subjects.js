@@ -4,8 +4,41 @@ export const subjects = [
       language: "Malayalam",
       subject: "English",
       description: "Previous years English question papers and solved answers.",
-      color: '#EA7562'
-    },
+      color: '#EA7562',
+      quest:[
+        {
+            year:2017,
+            fileName: 'AnswersPdfs/english/English Ans 2017.pdf'
+        },
+        {
+            year:2018,
+            fileName: 'AnswersPdfs/english/English Ans 2018.pdf'
+        },
+        {
+            year:2019,
+            fileName: 'AnswersPdfs/english/English Ans 2019.pdf'
+        },
+        {
+            year:2020,
+            fileName: 'AnswersPdfs/english/English Ans 2020.pdf'
+        },
+        {
+            year:2021,
+            fileName: 'AnswersPdfs/english/English Ans 2021.pdf'
+        },
+        {
+            year:2022,
+            fileName: 'AnswersPdfs/english/English Ans 2022.pdf'
+        },
+        {
+            year:2023,
+            fileName: 'AnswersPdfs/english/English Ans 2023.pdf'
+        },
+        {
+            year:2024,
+            fileName: 'AnswersPdfs/english/English Ans 2024.pdf'
+        },
+      ]},
     {
       id: 1,
       language: "Malayalam",

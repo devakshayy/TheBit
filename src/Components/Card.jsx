@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 const Card = ({language,description,subject,color}) => {
- 
+
   return (
     <div style={{backgroundColor:`${color}`}} className=" flex flex-col justify-between w-[320px]  sm:w-[220px]  h-[240px] rounded-xl px-2 py-3">
     {/* first div */}
