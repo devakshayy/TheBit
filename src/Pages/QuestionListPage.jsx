@@ -15,7 +15,11 @@ const QuestionListPage = () => {
     link.target = '_blank'
    //  link.download = fileName.split("/").pop(); // Extract the actual file name
     link.click();
+   //  console.log('fileUrl:', fileUrl);
+   //  console.log('fileName:',fileName);
+   // console.log('BASE_URL:', import.meta.env.BASE_URL);
   };
+
   
   return (
     <div className="mx-auto px-4 py-6 flex flex-col justify-center gap-4 items-center">

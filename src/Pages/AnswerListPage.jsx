@@ -7,6 +7,7 @@ import { answers} from '../data/answers'
 const AnswerListPage = () => {
        
       const  {sub} = useParams()
+      console.log(sub)
       const answersList = answers[sub]  
     
 
@@ -17,6 +18,7 @@ const AnswerListPage = () => {
             link.target = '_blank'
             // link.download = fileName.split("/").pop(); // Extract the actual file name
             link.click();
+            // console.log('BASE_URL:', import.meta.env.BASE_URL);
           };
           
     return (
