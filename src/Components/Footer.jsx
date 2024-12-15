@@ -5,7 +5,7 @@ import logo from '../assets/TheBitLogo.png'
 
 const Footer = () => {
   return (
-    <footer className="bg-slate-300  text-black pt-6 pb-4 mt-auto border-t border-slate-400">
+    <footer className="bg-slate-200  text-black pt-6 pb-4 mt-auto border-t border-slate-400">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}

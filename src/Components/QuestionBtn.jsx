@@ -4,7 +4,7 @@ const QuestionBtn = ({onClick,children}) => {
   return (
      <button 
          onClick={onClick}
-         className='min-w-[140px] min-h-[50px] bg-[#007BFF] p-1 text-white font-bold rounded-[15px]'
+         className='min-w-[140px] min-h-[50px] bg-[#007BFF] p-2 text-white font-bold rounded-[15px] shadow-sm ease-in duration-300 hover:bg-white hover:text-[#007BFF] border-2 border-[#007BFF] hover:shadow-xl'
      >
        {children}
      </button>
@@ -12,3 +12,4 @@ const QuestionBtn = ({onClick,children}) => {
 }
 
 export default QuestionBtn
+

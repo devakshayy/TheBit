@@ -4,7 +4,7 @@ import logo from '../assets/TheBitLogo.png'
 
 const Header = () => {
   return (
-    <div className='flex justify-between px-4 sm:px-8 items-center bg-slate-300 h-[80px] min-w-full border-slate-400 border-b-2'>
+    <div className='flex justify-between px-4 sm:px-8 items-center bg-slate-200 h-[80px] min-w-full border-slate-400 border-b-2'>
       <Link to="/" >
       <div className='w-[80px] h-[70px] md:w-[100px]  md:h-[80px]'>
         <img 
@@ -19,7 +19,7 @@ const Header = () => {
           name='input'
           placeholder='Search...'
           type="text" 
-          className='border-2 rounded-lg bg-slate-100 border-slate-500 w-[160px] sm:w-[450px]  h-[45px]  pl-4 pr-10' 
+          className='border-2 rounded-lg bg-slate-100 border-slate-500 w-[160px] sm:w-[450px] shadow-inner h-[45px]  pl-4 pr-10' 
         />
         <img 
           className='absolute top-1/2 right-2  transform -translate-y-1/2' 
