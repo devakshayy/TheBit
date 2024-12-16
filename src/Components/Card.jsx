@@ -23,12 +23,12 @@ const Card = ({language,description,subject,color,id}) => {
     {/* third div */}
     <div className="h-[35px] flex  justify-between place-items-center">
        <Link to={`/questionshub/${subject}`} >
-        <button  className="bg-white hover:font-bold hover:bg-slate-100 ease-out duration-300 hover:text-black tracking-wider w-[93px] rounded-xl h-full flex items-center text-[15px] text-center shadow-inner shadow-black justify-center p-2  ">
+        <button  className="bg-white hover:font-bold hover:bg-slate-100 ease-out sm:duration-300 hover:text-black tracking-wider w-[93px] rounded-xl h-full flex items-center text-[15px] text-center shadow-inner shadow-black justify-center p-2  ">
           Questions
         </button>
        </Link>
        <Link to={`/answershub/${subject}`} >
-        <button className="bg-white hover:font-bold hover:bg-slate-100 ease-out duration-300 hover:text-black tracking-wider w-[93px] rounded-xl h-full flex items-center text-[15px] text-center shadow-inner shadow-black justify-center p-2 ">
+        <button className="bg-white hover:font-bold hover:bg-slate-100 ease-out sm:duration-300 hover:text-black tracking-wider w-[93px] rounded-xl h-full flex items-center text-[15px] text-center shadow-inner shadow-black justify-center p-2 ">
           Answers
         </button>
        </Link>
