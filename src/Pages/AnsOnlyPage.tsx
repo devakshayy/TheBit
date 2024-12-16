@@ -3,7 +3,7 @@ import { answers } from "../data/answers";
 const AnsOnlyPage = () => {
 
   const handleDownload = (fileName) => {
-    const fileUrl = `/${fileName}`; // Access files directly from the public directory
+    const fileUrl = `/${fileName}`; 
     const link = document.createElement("a");
     link.href = fileUrl;
     link.download = fileName.split("/").pop(); 
