@@ -3,14 +3,16 @@ import { Link } from "react-router-dom";
 const Card = ({language,description,subject,color,id}) => {
 
   return (
-    <div style={{backgroundColor:`${color}`}} className=" flex flex-col justify-between w-[320px]  sm:w-[220px]  h-[240px] rounded-xl px-2 py-3 shadow-sm hover:shadow-xl">
+    <div style={{backgroundColor:`${color}`,
+                 boxShadow: '10px 10px 6px rgba(0, 0, 0, 0.2)'}} 
+                 className=" flex flex-col justify-between w-[320px]  sm:w-[220px]  h-[240px] rounded-xl px-2 py-3 ">
     {/* first div */}
     <div className="h-[25px] flex justify-between items-center">
-      <div className="bg-white w-[80px] h-full rounded-xl flex justify-center items-center">
-        <p className="text-[12px]">{language}</p>
+      <div className="bg-white w-[80px] h-full rounded-xl flex justify-center items-center shadow-inner shadow-slate-700">
+        <p className="text-[12px] tracking-wide ">{language}</p>
       </div>
-      <div className="w-[25px] h-[25px] bg-white rounded-full flex justify-center items-center">
-        <p className="text-[14px] font-semibold">{id+1}</p>
+      <div className="w-[25px] h-[25px] bg-white rounded-full flex justify-center items-center shadow-inner shadow-current">
+        <p className="text-[14px]  font-semibold">{id+1}</p>
       </div>
     </div>
     {/* second div */}
@@ -21,12 +23,12 @@ const Card = ({language,description,subject,color,id}) => {
     {/* third div */}
     <div className="h-[35px] flex  justify-between place-items-center">
        <Link to={`/questionshub/${subject}`} >
-        <button  className="bg-white w-[90px] rounded-xl h-full flex items-center text-[15px] hover:text-[17px] text-center ease-in duration-100 justify-center p-2 shadow-2xl ">
+        <button  className="bg-white hover:font-bold hover:bg-slate-100 ease-out duration-300 hover:text-black tracking-wider w-[93px] rounded-xl h-full flex items-center text-[15px] text-center shadow-inner shadow-black justify-center p-2  ">
           Questions
         </button>
        </Link>
        <Link to={`/answershub/${subject}`} >
-        <button className="bg-white max-w-[90px] rounded-xl h-full flex items-center text-[15px] hover:text-[17px] text-center ease-in duration-100 justify-center p-2 shadow-2xl">
+        <button className="bg-white hover:font-bold hover:bg-slate-100 ease-out duration-300 hover:text-black tracking-wider w-[93px] rounded-xl h-full flex items-center text-[15px] text-center shadow-inner shadow-black justify-center p-2 ">
           Answers
         </button>
        </Link>

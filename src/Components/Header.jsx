@@ -6,7 +6,7 @@ const Header = ({search,setSearch}) => {
   
 
   return (
-    <div className="flex justify-between px-2 sm:px-4 items-center bg-slate-200 h-[80px] min-w-full border-slate-400 border-b-2">
+    <div className="flex justify-between px-2 sm:px-4 items-center bg-slate-200 h-[80px] min-w-full border-slate-400 border-b">
       <Link to="/">
         <div className="w-[80px] h-[70px] md:w-[100px]  md:h-[80px]">
           <img className="h-full w-full" src={logo} alt="TheBitLogo.png" />
