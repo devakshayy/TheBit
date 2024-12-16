@@ -1,5 +1,4 @@
 import Card from '../Components/Card'
-import { subjects } from '../data/subjects'
 
 const HomePage = ({searchSubject}) => {
   

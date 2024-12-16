@@ -8,6 +8,7 @@ import AnsOnlyPage from "./Pages/AnsOnlyPage"
 import Footer from "./Components/Footer"
 import { useState } from "react"
 import { subjects } from "./data/subjects"
+import NotFoundPage from "./Pages/NotfoundPage"
 
 function App() {
 
@@ -40,6 +41,7 @@ function App() {
             <Route path="answershub" element={ <AnsOnlyPage/>  } />
             <Route path="/questionshub/:sub" element={ <QuestionListPage/> } />
             <Route path="/answershub/:sub" element={ <AnswerListPage/> } />
+            <Route path="*" element={ <NotFoundPage/> } />
         </Routes>
         </main>
         <Footer/>
