@@ -44,7 +44,8 @@ const Footer = () => {
             </ul>
           </div>
           {/* Resources */}
-          <div className="flex flex-col justify-center items-center sm:flex sm:justify-start sm:items-start">
+         <div className="hidden sm:block">
+         <div className="flex flex-col justify-center items-center sm:flex sm:justify-start sm:items-start">
             <h3 className="font-semibold mb-4">Resources</h3>
             <ul className="space-y-2">
               <li>
@@ -65,6 +66,7 @@ const Footer = () => {
             </ul>
           </div>
 
+         </div>
           {/* Contact */}
           <div className="flex flex-col justify-center items-center sm:flex sm:justify-start sm:items-start">
             <h3 className="font-semibold mb-4">Contact Us</h3>
@@ -72,7 +74,7 @@ const Footer = () => {
               <li>Email: contact@thebit.com</li>
               <li>Follow us:</li>
               <li className="flex space-x-4">
-                <a href="#" className="hover:text-slate-600">
+                <a href="https://x.com/dev_akshayy" className="hover:text-slate-600">
                   <span className="sr-only">X (formerly Twitter)</span>
                   <svg
                     className="w-[31px] h-6"
@@ -96,7 +98,7 @@ const Footer = () => {
                     />
                   </svg>
                 </a>
-                <a href="#" className="hover:text-slate-600">
+                <a href="https://www.instagram.com/4k_sh_a_y/?igsh=MW50ajV6dXN2cnNqNg%3D%3D" className="hover:text-slate-600">
                   <span className="sr-only">Instagram</span>
                   <svg
                     className="w-6 h-6"
