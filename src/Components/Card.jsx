@@ -10,7 +10,7 @@ const Card = ({language,description,subject,color,id}) => {
         <p className="text-[12px]">{language}</p>
       </div>
       <div className="w-[25px] h-[25px] bg-white rounded-full flex justify-center items-center">
-        <span className="text-[14px] font-semibold">{id+1}</span>
+        <p className="text-[14px] font-semibold">{id+1}</p>
       </div>
     </div>
     {/* second div */}

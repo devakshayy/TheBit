@@ -1,6 +1,6 @@
 import React from "react";
 import { answers } from "../data/answers";
-const AnsOnly = () => {
+const AnsOnlyPage = () => {
 
   const handleDownload = (fileName) => {
     const fileUrl = `/${fileName}`; // Access files directly from the public directory
@@ -48,4 +48,4 @@ const AnsOnly = () => {
   );
 };
 
-export default AnsOnly;
+export default AnsOnlyPage;
