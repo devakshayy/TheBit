@@ -8,7 +8,8 @@ const QuestOnlyPage = () => {
     const link = document.createElement("a");
     link.href = fileUrl;
     // link.target = '_blank'
-    link.download = fileName.split("/").pop(); // Extract the actual file name
+    link.download = fileName.split("/").pop(); 
+    // Extract the actual file name
     link.click();
   };
 
