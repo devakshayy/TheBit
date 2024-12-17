@@ -17,7 +17,6 @@ const QuestionListPage = () => {
     link.click();
    //  console.log('fileUrl:', fileUrl);
    //  console.log('fileName:',fileName);
-   // console.log('BASE_URL:', import.meta.env.BASE_URL);
   };
 
   
