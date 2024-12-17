@@ -7,7 +7,6 @@ import { answers} from '../data/answers'
 const AnswerListPage = () => {
        
       const  {sub} = useParams()
-      console.log(sub)
       const answersList = answers[sub]  
     
 
