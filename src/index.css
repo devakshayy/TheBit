@@ -3,3 +3,77 @@
 @tailwind utilities;
 
 
+@layer utilities {
+    /* Header */
+    .header-container {
+        @apply flex justify-between px-2 sm:px-4 items-center bg-slate-200 h-[80px] 
+        min-w-full border-slate-400 border-b;
+    }
+    .header-searchbar {
+        @apply border-2 rounded-lg bg-slate-100 border-slate-500 w-[160px] 
+        sm:w-[450px] shadow-inner h-[45px]  pl-4 pr-10;
+    }
+     /* Home Page */
+    .home-container {
+        @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 justify-items-center;
+    }
+    /* Card Container */
+    .card-container {
+        @apply flex flex-col justify-between w-[320px] sm:w-[220px] h-[240px] rounded-xl px-2 py-3;
+    }
+    .card-language {
+        @apply bg-white w-[80px] h-[25px] rounded-xl flex justify-center items-center shadow-inner shadow-slate-700;
+    }
+    .card-count-circle {
+        @apply w-[25px] h-[25px] bg-white rounded-full flex justify-center items-center shadow-inner shadow-current;
+    }
+    .card-content {
+        @apply border-b-2 pb-2 text-white;
+    }
+    .card-btn {
+        @apply bg-white hover:translate-y-0.5 hover:font-bold transform transition
+         hover:bg-slate-100 ease-out sm:duration-300 tracking-wider w-[93px] rounded-xl h-full 
+         flex items-center text-[15px] text-center shadow-inner shadow-black justify-center p-2;
+    }
+    .card-footer {
+        @apply h-[35px] flex justify-between items-center;
+        
+    }
+    /* question and aswer buttons  */
+    .ans-btn {
+        @apply min-w-[140px] min-h-[50px] bg-[#20C997] p-2 text-white font-bold rounded-[15px] shadow-sm 
+        ease-in duration-300 hover:bg-white hover:text-[#20C997] border-2 border-[#20C997]
+        hover:shadow-2xl hover:shadow-[#20C997] hover:translate-y-0.5 transform transition;
+    }
+    .qus-btn {
+        @apply min-w-[140px] min-h-[50px] bg-[#007BFF] p-2 text-white font-bold rounded-[15px]
+        shadow-sm ease-in duration-300 hover:bg-white hover:text-[#007BFF] border-2 border-[#007BFF]
+        hover:shadow-2xl hover:shadow-[#007BFF] hover:translate-y-0.5 hover:font-bold transform transition;
+    }
+    /* questionOnlypage and answerOnly page containers  */
+    .qustionOnlyPage-heading {
+        @apply min-w-[300px] min-h-[60px] sm:min-w-[600px] md:min-w-[720px] lg:min-w-[1000px] p-2 text-lg 
+        sm:text-2xl flex justify-center text-center items-center font-extrabold bg-[#003366] rounded-[15px]
+      text-white;
+    }
+    .answerOnlyPage-heading {
+        @apply min-w-[300px] min-h-[60px] sm:min-w-[600px] md:min-w-[720px] lg:min-w-[1000px] p-2 text-lg 
+        sm:text-2xl flex justify-center text-center items-center font-extrabold bg-[#003366] rounded-[15px]
+        text-white;
+    }
+    /* QuestinList and AnswerList Pages */
+    .qusandAnsList-container {
+        @apply mx-auto px-4 py-6 flex flex-col justify-center gap-4 items-center;
+    }
+    .questionList-container-heading {
+        @apply min-w-[300px] min-h-[60px] sm:min-w-[600px] md:min-w-[720px] lg:min-w-[1000px] p-2 text-lg 
+        sm:text-2xl flex justify-center text-center items-center font-extrabold bg-[#003366] rounded-[15px]
+      text-white;
+    }
+    .answerList-container-heading {
+        @apply min-w-[300px] min-h-[60px] sm:min-w-[600px] md:min-w-[720px] lg:min-w-[1000px] p-2 text-lg 
+        sm:text-2xl flex justify-center text-center items-center font-extrabold bg-[#005F56] rounded-[15px]
+         text-white;
+    }
+}
+ 
