@@ -6,9 +6,9 @@ const Header = ({search,setSearch}) => {
   
 
   return (
-    <div className="flex justify-between px-2 sm:px-4 items-center bg-slate-200 h-[80px] min-w-full border-slate-400 border-b">
+    <div className="header-container">
       <Link to="/">
-        <div className="w-[60px] h-[60px] md:w-[100px]  md:h-[80px]">
+        <div className="w-[70px] h-[55px] md:w-[78px]  md:h-[57px]">
           <img className="h-full w-full" src={logo} alt="TheBitLogo.png" />
         </div>
       </Link>
@@ -19,7 +19,7 @@ const Header = ({search,setSearch}) => {
           name="input"
           placeholder="Search..."
           type="text"
-          className="border-2 rounded-lg bg-slate-100 border-slate-500 w-[160px] sm:w-[450px] shadow-inner h-[45px]  pl-4 pr-10"
+          className="header-searchbar"
         />
         <img
           className="absolute top-1/2 right-2  transform -translate-y-1/2"

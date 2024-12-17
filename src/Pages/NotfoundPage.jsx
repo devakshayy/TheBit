@@ -4,7 +4,9 @@ import { Link } from 'react-router-dom';
 
 const NotFoundPage = () => {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gray-50">
+    <div className=" p-8 flex flex-col 
+                   items-center justify-center
+                    bg-gray-50">
       <div className="text-center space-y-6">
         {/* Error Code */}
         <h1 className="text-8xl font-bold text-gray-900">404</h1>
@@ -20,7 +22,10 @@ const NotFoundPage = () => {
         {/* Back to Home Button */}
         <Link 
           to="/" 
-          className="inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors"
+          className="inline-flex items-center gap-2
+                   bg-blue-600 text-white px-6 py-3 
+                   rounded-lg hover:bg-blue-700 
+                   transition-colors"
         >
           <HomeIcon size={20} />
           Back to Home
