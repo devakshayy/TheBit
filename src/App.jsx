@@ -11,21 +11,21 @@ import { subjects } from "./data/subjects"
 import NotFoundPage from "./Pages/NotfoundPage"
 
 function App() {
-
-  let filteredSubjects= [];
-
+   
   const [search, setSearch] = useState("");
-  
-  if (search) {
-    filteredSubjects = subjects.filter(
+
+  const getFilteredSubjects = () => {
+    if (!search) return subjects;
+    
+    return subjects.filter(
       (sub) =>
         sub.subject.toLowerCase().includes(search.toLowerCase()) ||
         sub.description.toLowerCase().includes(search.toLowerCase()) ||
         (Number(sub.id) + 1).toString().includes(search)
     );
-  } else {
-    filteredSubjects = [...subjects];
-  }  
+  };
+  
+  const filteredSubjects = getFilteredSubjects();
 
   return (
      
