@@ -19,7 +19,7 @@
     }
     /* Card Container */
     .card-container {
-        @apply flex flex-col justify-between w-[320px] sm:w-[220px] h-[240px] rounded-xl px-2 py-3;
+        @apply flex flex-col justify-between w-[320px] sm:w-[230px] h-[240px] sm:h-[250px] rounded-xl px-2 py-3;
     }
     .card-language {
         @apply bg-white w-[80px] h-[25px] rounded-xl flex justify-center items-center shadow-inner shadow-slate-700;
