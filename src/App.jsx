@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes, useParams } from "react-router-dom"
+import { BrowserRouter, Route, Routes } from "react-router-dom"
 import Header from "./Components/Header"
 import HomePage from "./Pages/HomePage"
 import AnswerListPage from "./Pages/AnswerListPage"
@@ -17,14 +17,12 @@ function App() {
   const [search, setSearch] = useState("");
   
   if (search) {
-    filteredSubjects = [
-      ...subjects.filter(
-          (sub) => 
-            sub.subject.toLowerCase().includes(search.toLocaleLowerCase()) ||
-            sub.description.toLowerCase().includes(search.toLocaleLowerCase()) ||
-            (Number(sub.id)+1).toString().includes(search)
-          ),
-    ];
+    filteredSubjects = subjects.filter(
+      (sub) =>
+        sub.subject.toLowerCase().includes(search.toLowerCase()) ||
+        sub.description.toLowerCase().includes(search.toLowerCase()) ||
+        (Number(sub.id) + 1).toString().includes(search)
+    );
   } else {
     filteredSubjects = [...subjects];
   }  
@@ -37,10 +35,10 @@ function App() {
         <main className="flex-grow bg-slate-100"> {/*main wrapper */}
         <Routes>
             <Route path="/" element={ <HomePage searchSubject={filteredSubjects} /> } />
-            <Route path="questionshub" element={ <QuestOnlyPage/>  } />
-            <Route path="answershub" element={ <AnsOnlyPage/>  } />
-            <Route path="/questionshub/:sub" element={ <QuestionListPage/> } />
-            <Route path="/answershub/:sub" element={ <AnswerListPage/> } />
+            <Route path="/questionshub" element={ <QuestOnlyPage/> } />
+            <Route path="/answershub" element={ <AnsOnlyPage/>  } />
+            <Route path="/questionshub/:sub" element={ <QuestionListPage/> }  caseSensitive={false} />
+            <Route path="/answershub/:sub" element={ <AnswerListPage/> }  caseSensitive={false} />
             <Route path="*" element={ <NotFoundPage/> } />
         </Routes>
         </main>
