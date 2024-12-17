@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from '../assets/TheBitLogo.png'
+import logo from '../assets/minnuLogo.png'
 
 
 const Footer = () => {
