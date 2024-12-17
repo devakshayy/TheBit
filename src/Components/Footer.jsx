@@ -14,7 +14,7 @@ const Footer = () => {
               <img
                 src={logo}
                 alt="TheBitLogo"
-                className="w-[90px] h-[80px]"
+                className="w-[95px] h-[80px]"
               />
             </Link>
             <p className="text-sm text-center sm:text-start">

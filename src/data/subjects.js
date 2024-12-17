@@ -53,13 +53,13 @@ export const subjects = [
       language: "Malayalam",
       subject: "Social",
       description: "Previous years Social Science question papers and solved answers.",
-      color: '#887BAF'  
+      color: '#B57E9D'  
     },
     {
         id: 8,
         language: "Malayalam",
         subject: "Sanskrit",
         description: "Previous years Sanskrit question papers and solved answers.",
-        color: '#887BAF'  
+        color: '#51849A'  
       },
   ];

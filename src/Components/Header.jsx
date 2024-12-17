@@ -8,7 +8,7 @@ const Header = ({search,setSearch}) => {
   return (
     <div className="header-container">
       <Link to="/">
-        <div className="w-[60px] h-[60px] md:w-[100px]  md:h-[80px]">
+        <div className="w-[70px] h-[55px] md:w-[78px]  md:h-[57px]">
           <img className="h-full w-full" src={logo} alt="TheBitLogo.png" />
         </div>
       </Link>

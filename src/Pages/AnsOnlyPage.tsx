@@ -16,7 +16,7 @@ const AnsOnlyPage = () => {
       <div className="answerOnlyPage-heading">
         <p> All Answer Papers</p>
       </div>
-      <div className="grid gap-4 sm:gap-14 lg:gap-18
+      <div className="grid  gap-4 sm:gap-14 lg:gap-18
                        grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 p-2">
         {Object.entries(answers).map(([subject, years]) => (
           <div key={subject} style={{ marginBottom: "20px" }}>
