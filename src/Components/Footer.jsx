@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from '../assets/minnuLogo.png'
+import logo from '../assets/TheBitLogo.png'
 
 
 const Footer = () => {
@@ -13,7 +13,7 @@ const Footer = () => {
             <Link to="/">
               <img
                 src={logo}
-                alt="TheBit Logo"
+                alt="TheBitLogo"
                 className="w-[90px] h-[80px]"
               />
             </Link>

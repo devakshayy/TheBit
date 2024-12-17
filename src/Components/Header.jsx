@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import logo from "../assets/minnuLogo.png";
+import logo from "../assets/TheBitLogo.png";
 
 const Header = ({search,setSearch}) => {
   
@@ -8,8 +8,8 @@ const Header = ({search,setSearch}) => {
   return (
     <div className="flex justify-between px-2 sm:px-4 items-center bg-slate-200 h-[80px] min-w-full border-slate-400 border-b">
       <Link to="/">
-        <div className="w-[70px] h-[60px] md:w-[100px]  md:h-[80px]">
-          <img className="h-full w-full" src={logo} alt="minnuLogo.png" />
+        <div className="w-[60px] h-[60px] md:w-[100px]  md:h-[80px]">
+          <img className="h-full w-full" src={logo} alt="TheBitLogo.png" />
         </div>
       </Link>
       <div className="relative">
