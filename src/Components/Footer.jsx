@@ -73,7 +73,7 @@ const Footer = () => {
           <div className="flex flex-col justify-center items-center sm:flex sm:justify-start sm:items-start">
             <h3 className="font-semibold mb-4">Contact Us</h3>
             <ul className="space-y-2">
-              <li>Email: contact@thebit.com</li>
+              <li>Email: contact@thebitz.com</li>
               <li>Follow us:</li>
               <li className="flex space-x-4 items-center">
                 <a href="https://akportfolio-three.vercel.app/" className="hover:text-slate-600">
@@ -122,8 +122,8 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-slate-500 mt-4 pt-4 text-center text-xs text-sm">
-          <p>&copy; {new Date().getFullYear()} TheBit. All rights reserved. Third-party materials 
+        <div className="border-t border-slate-500 mt-4 pt-4 text-center text-xs">
+          <p>&copy; {new Date().getFullYear()} TheBitz. All rights reserved. Third-party materials 
             are used for educational purposes only and remain the property of their respective owners.</p>
         </div>
       </div>
