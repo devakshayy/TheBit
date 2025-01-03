@@ -30,9 +30,9 @@ function App() {
   return (
      
      <BrowserRouter>
-       <div className="min-h-screen flex flex-col">  {/* wrapper div */}
+       <div className="min-h-screen flex flex-col">  
        <Header search={search} setSearch={setSearch} />
-        <main className="flex-grow bg-slate-100"> {/*main wrapper */}
+        <main className="flex-grow bg-slate-100"> 
         <Routes>
             <Route path="/" element={ <HomePage searchSubject={filteredSubjects} /> } />
             <Route path="/questionshub" element={ <QuestOnlyPage/> } />
