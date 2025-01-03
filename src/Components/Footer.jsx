@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import logo from '../assets/TheBitLogo.png'
+import { FaGlobeAsia } from "react-icons/fa";
+
 
 
 const Footer = () => {
@@ -73,16 +75,9 @@ const Footer = () => {
             <ul className="space-y-2">
               <li>Email: contact@thebit.com</li>
               <li>Follow us:</li>
-              <li className="flex space-x-4">
-                <a href="https://x.com/dev_akshayy" className="hover:text-slate-600">
-                  <span className="sr-only">X (formerly Twitter)</span>
-                  <svg
-                    className="w-[31px] h-6"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-                  </svg>
+              <li className="flex space-x-4 items-center">
+                <a href="https://akportfolio-three.vercel.app/" className="hover:text-slate-600">
+                   <FaGlobeAsia className="w-[32px] h-[30px]" />
                 </a>
                 <a href="https://github.com/devakshayy" className="hover:text-slate-600">
                   <span className="sr-only">GitHub</span>
@@ -127,8 +122,9 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-slate-500 mt-4 pt-4 text-center text-sm">
-          <p>&copy; {new Date().getFullYear()} TheBit. All rights reserved.</p>
+        <div className="border-t border-slate-500 mt-4 pt-4 text-center text-xs text-sm">
+          <p>&copy; {new Date().getFullYear()} TheBit. All rights reserved. Third-party materials 
+            are used for educational purposes only and remain the property of their respective owners.</p>
         </div>
       </div>
     </footer>
