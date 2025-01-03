@@ -69,7 +69,7 @@ const Footer = () => {
               <li>Follow us:</li>
               <li className="flex space-x-4 items-center">
                 <a
-                  href="https://github.com/devakshayy"
+                  href="https://akportfolio-three.vercel.app/"
                   className="hover:text-slate-600"
                 >
                   <svg
