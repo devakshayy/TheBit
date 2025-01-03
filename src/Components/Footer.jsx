@@ -1,9 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from '../assets/TheBitLogo.png'
-import { FaGlobeAsia } from "react-icons/fa";
-
-
+import logo from "../assets/TheBitLogo.png";
 
 const Footer = () => {
   return (
@@ -13,11 +10,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="flex flex-col justify-center items-center sm:flex sm:justify-start sm:items-start space-y-4">
             <Link to="/">
-              <img
-                src={logo}
-                alt="TheBitLogo"
-                className="w-[95px] h-[80px]"
-              />
+              <img src={logo} alt="TheBitLogo" className="w-[95px] h-[80px]" />
             </Link>
             <p className="text-sm text-center sm:text-start">
               Your trusted platform for questions and answers
@@ -46,29 +39,28 @@ const Footer = () => {
             </ul>
           </div>
           {/* Resources */}
-         <div className="hidden sm:block">
-         <div className="flex flex-col justify-center items-center sm:flex sm:justify-start sm:items-start">
-            <h3 className="font-semibold mb-4">Resources</h3>
-            <ul className="space-y-2">
-              <li>
-                <a href="#" className="hover:text-slate-600">
-                  Help Center
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-slate-600">
-                  Guidelines
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-slate-600">
-                  FAQ
-                </a>
-              </li>
-            </ul>
+          <div className="hidden sm:block">
+            <div className="flex flex-col justify-center items-center sm:flex sm:justify-start sm:items-start">
+              <h3 className="font-semibold mb-4">Resources</h3>
+              <ul className="space-y-2">
+                <li>
+                  <a href="#" className="hover:text-slate-600">
+                    Help Center
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-slate-600">
+                    Guidelines
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-slate-600">
+                    FAQ
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
-
-         </div>
           {/* Contact */}
           <div className="flex flex-col justify-center items-center sm:flex sm:justify-start sm:items-start">
             <h3 className="font-semibold mb-4">Contact Us</h3>
@@ -76,10 +68,27 @@ const Footer = () => {
               <li>Email: contact@thebitz.com</li>
               <li>Follow us:</li>
               <li className="flex space-x-4 items-center">
-                <a href="https://akportfolio-three.vercel.app/" className="hover:text-slate-600">
-                   <FaGlobeAsia className="w-[32px] h-[30px]" />
+                <a
+                  href="https://akportfolio-three.vercel.app/"
+                  className="hover:text-slate-600"
+                >
+                  <svg
+                    className="w-6 h-6"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
                 </a>
-                <a href="https://github.com/devakshayy" className="hover:text-slate-600">
+
+                <a
+                  href="https://github.com/devakshayy"
+                  className="hover:text-slate-600"
+                >
                   <span className="sr-only">GitHub</span>
                   <svg
                     className="w-6 h-6"
@@ -93,7 +102,10 @@ const Footer = () => {
                     />
                   </svg>
                 </a>
-                <a href="https://www.instagram.com/4k_sh_a_y/?igsh=MW50ajV6dXN2cnNqNg%3D%3D" className="hover:text-slate-600">
+                <a
+                  href="https://www.instagram.com/4k_sh_a_y/?igsh=MW50ajV6dXN2cnNqNg%3D%3D"
+                  className="hover:text-slate-600"
+                >
                   <span className="sr-only">Instagram</span>
                   <svg
                     className="w-6 h-6"
@@ -107,7 +119,10 @@ const Footer = () => {
                     />
                   </svg>
                 </a>
-                <a href="https://www.linkedin.com/in/akshayparamasivan/" className="hover:text-slate-600">
+                <a
+                  href="https://www.linkedin.com/in/akshayparamasivan/"
+                  className="hover:text-slate-600"
+                >
                   <span className="sr-only">LinkedIn</span>
                   <svg
                     className="w-[31px] h-6"
@@ -123,8 +138,11 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-slate-500 mt-4 pt-4 text-center text-xs">
-          <p>&copy; {new Date().getFullYear()} TheBitz. All rights reserved. Third-party materials 
-            are used for educational purposes only and remain the property of their respective owners.</p>
+          <p>
+            &copy; {new Date().getFullYear()} TheBitz. All rights reserved.
+            Third-party materials are used for educational purposes only and
+            remain the property of their respective owners.
+          </p>
         </div>
       </div>
     </footer>
@@ -132,4 +150,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
