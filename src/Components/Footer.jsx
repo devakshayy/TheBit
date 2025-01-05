@@ -102,7 +102,7 @@ const Footer = () => {
                     />
                   </svg>
                 </a>
-                {/* <a
+                <a
                   href="https://www.instagram.com/4k_sh_a_y/?igsh=MW50ajV6dXN2cnNqNg%3D%3D"
                   className="hover:text-slate-600"
                 >
@@ -118,14 +118,14 @@ const Footer = () => {
                       clipRule="evenodd"
                     />
                   </svg>
-                </a> */}
+                </a>
                 <a
                   href="https://www.linkedin.com/in/akshayparamasivan/"
                   className="hover:text-slate-600"
                 >
                   <span className="sr-only">LinkedIn</span>
                   <svg
-                    className="w-[30px] h-6"
+                    className="w-[30px] h-5"
                     fill="currentColor"
                     viewBox="0 0 24 24"
                   >
