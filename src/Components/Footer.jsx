@@ -125,7 +125,7 @@ const Footer = () => {
                 >
                   <span className="sr-only">LinkedIn</span>
                   <svg
-                    className="w-[30px] h-[26px]"
+                    className="w-[30px] h-5"
                     fill="currentColor"
                     viewBox="0 0 24 24"
                   >
