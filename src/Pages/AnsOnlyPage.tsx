@@ -14,7 +14,7 @@ const AnsOnlyPage = () => {
     <div className="mx-auto px-4 py-6 flex flex-col
                     justify-center gap-4 items-center">
       <div className="answerOnlyPage-heading">
-        <p> All Answer Papers</p>
+        <h1> All SSLC Answer Papers</h1>
       </div>
       <div className="grid  gap-4 sm:gap-14 lg:gap-18
                        grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 p-2">
