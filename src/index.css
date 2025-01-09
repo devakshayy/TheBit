@@ -28,7 +28,7 @@
         @apply w-[25px] h-[25px] bg-white rounded-full flex justify-center items-center shadow-inner shadow-current;
     }
     .card-content {
-        @apply border-b-2 pb-2 text-white;
+        @apply border-b-2 px-1 py-2 text-white;
     }
     .card-btn {
         @apply bg-white hover:translate-y-0.5 hover:font-bold transform transition
