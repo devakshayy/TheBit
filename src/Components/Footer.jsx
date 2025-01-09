@@ -10,11 +10,11 @@ const Footer = () => {
           {/* Company Info */}
           <div className="flex flex-col justify-center items-center sm:flex sm:justify-start sm:items-start space-y-4">
             <Link to="/">
-              <img src={logo} alt="TheBitLogo" className="w-[95px] h-[80px]" />
+              <img src={logo} alt="sslc question papers" className="w-[95px] h-[80px]" />
             </Link>
-            <p className="text-sm text-center sm:text-start">
-              Your trusted platform for questions and answers
-            </p>
+            <h2 className="text-sm text-center sm:text-start">
+              Your trusted platform for sslc questions and answers
+            </h2>
           </div>
 
           {/* Quick Links */}

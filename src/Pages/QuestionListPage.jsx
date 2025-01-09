@@ -23,7 +23,7 @@ const QuestionListPage = () => {
   return (
     <div className="qusandAnsList-container">
             <div className='questionList-container-heading'>
-                  <p> {sub} Question Pappers ({questionsList.length})</p>        
+                  <p>SSLC {sub} Question Pappers ({questionsList.length})</p>        
             </div>
             <div className='grid gap-4 sm:gap-14 
                            lg:gap-18 grid-cols-2 sm:grid-cols-3

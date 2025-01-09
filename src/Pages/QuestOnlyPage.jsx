@@ -16,7 +16,7 @@ const QuestOnlyPage = () => {
     <div className="mx-auto px-4 py-6 flex flex-col 
                     justify-center gap-4 items-center">
       <div className="qustionOnlyPage-heading">
-        <p>All Question Papers</p>
+        <h1>All SSLC Question Papers</h1>
       </div>
       <div className="grid gap-4 sm:gap-14 lg:gap-18 grid-cols-2 
                       sm:grid-cols-3 lg:grid-cols-4 p-2">

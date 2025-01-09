@@ -9,7 +9,7 @@ const Header = ({search,setSearch}) => {
     <div className="header-container">
       <Link to="/">
         <div className="w-[70px] h-[55px] md:w-[78px]  md:h-[57px]">
-          <img className="h-full w-full" src={logo} alt="TheBitLogo.png" />
+          <img className="h-full w-full" src={logo}  alt="SSLC question papers" />
         </div>
       </Link>
       <div className="relative">
