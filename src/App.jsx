@@ -15,7 +15,10 @@ function App() {
   const [search, setSearch] = useState("");
 
   const getFilteredSubjects = () => {
-    if (!search) return subjects;
+
+    const trimmedSearch = search.trim();
+    
+    if (!trimmedSearch) return subjects;
     
     return subjects.filter(
       (sub) =>
